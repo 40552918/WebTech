@@ -1,0 +1,48 @@
+
+@font-face {
+  font-family: quin;
+  src: url(quinquefive/QuinqueFive.ttf);
+  }
+
+.grid-container {
+  font-family: quin;
+  font-size: 20px;
+  line-height: 30px;
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer right right';
+  grid-template-rows: 80px auto 150px;
+  grid-template-columns: 230px 400px 600px;
+  gap: 10px;
+  background-color: rgba(0, 45, 45, 0.7);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+}
+
+#item1 { grid-area: header; }
+#item2 { grid-area: menu; }
+#item3 { grid-area: main;
+        text-align: left; }
+#item4 { grid-area: right; }
+#item5 { grid-area: footer; }
+
+#txtbtn:hover{
+  background-color: gray;
+  text-shadow: 3px 3px red;
+}
+.inventory-container {
+  display: grid;
+  gap: 10px;
+  background-color: rgba(0, 45, 45, 0.7);
+  padding: 10px;
+  font-family: quin;
+  font-size: 10px;
+}
+
